@@ -1,0 +1,8 @@
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/bin/Debug/Econeer.dll
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/bin/Debug/Econeer.pdb
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.csproj.AssemblyReference.cache
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.AssemblyInfoInputs.cache
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.AssemblyInfo.cs
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.csproj.CoreCompileInputs.cache
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.dll
+/Users/keegangoecke/Desktop/hackpalacia/HackPlalacia_2023/.mono/temp/obj/Debug/Econeer.pdb
