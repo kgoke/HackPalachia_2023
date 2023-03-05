@@ -51,8 +51,10 @@ public class Player : KinematicBody2D{
 		// play animation
 		if(IsOnFloor() && direction.x == 0){
 			// chop
-			if(Input.IsActionJustPressed("swing_axe")){
+			if(Input.IsActionPressed("swing_axe")){
+				
 				animatedSprite.Play("MC_Chop"); // Chop
+				
 			} else {
 				animatedSprite.Play("MC_Idle"); // idle
 			}
