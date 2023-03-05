@@ -204,4 +204,5 @@ shape = SubResource( 29 )
 position = Vector2( 310, 368 )
 frames = SubResource( 28 )
 animation = "on"
+frame = 1
 playing = true
