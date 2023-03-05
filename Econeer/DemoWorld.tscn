@@ -191,6 +191,7 @@ script = ExtResource( 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 23 )
 animation = "MC_Idle"
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -203,5 +204,5 @@ shape = SubResource( 29 )
 position = Vector2( 310, 368 )
 frames = SubResource( 28 )
 animation = "on"
-frame = 2
+frame = 1
 playing = true

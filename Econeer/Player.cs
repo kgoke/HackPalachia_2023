@@ -39,6 +39,8 @@ public class Player : KinematicBody2D{
 			direction.y =- jumpForce;
 		}
 		
+	
+		
 		// flip sprite
 		if(direction.x > 0){
 			animatedSprite.FlipH = false;
@@ -48,9 +50,18 @@ public class Player : KinematicBody2D{
 		
 		// play animation
 		if(IsOnFloor() && direction.x == 0){
-			animatedSprite.Play("MC_Idle"); // idle
+			// chop
+			if(Input.IsActionJustPressed("swing_axe")){
+				animatedSprite.Play("MC_Chop"); // Chop
+			} else {
+				animatedSprite.Play("MC_Idle"); // idle
+			}
 		} else if(IsOnFloor() && direction.x != 0){
-			animatedSprite.Play("MC_Walk");	// run 
+			if(Input.IsActionJustPressed("swing_axe")){
+				animatedSprite.Play("MC_Chop"); // Chop
+			} else {
+				animatedSprite.Play("MC_Walk");	// run 
+			}
 		} else if(!IsOnFloor()){
 			animatedSprite.Play("MC_Jump");	// jump
 		}
