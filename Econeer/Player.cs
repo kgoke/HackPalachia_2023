@@ -3,19 +3,19 @@ using System;
 
 public class Player : KinematicBody2D{
 	Vector2 direction;
-	float movementSpeed = 500;
+	float movementSpeed = 200;
 	
-	float gravity = 90;
+	float gravity = 30;
 	float maxFallSpeed = 1000;
 	float minFallSpeed = 5;
 	
-	float jumpForce = 1000;
+	float jumpForce = 400;
 	
 	AnimatedSprite animatedSprite;
 	
 	
 	public override void _Ready(){
-		animatedSprite = (AnimatedSprite)GetNode("Player/AnimatedSprite");
+		animatedSprite = (AnimatedSprite)GetNode("AnimatedSprite");
 	
 	}
 
@@ -46,7 +46,14 @@ public class Player : KinematicBody2D{
 			animatedSprite.FlipH = true;
 		}
 		
-		// play animatio 
+		// play animation
+		if(IsOnFloor() && direction.x == 0){
+			animatedSprite.Play("MC_Idle"); // idle
+		} else if(IsOnFloor() && direction.x != 0){
+			animatedSprite.Play("MC_Walk");	// run 
+		} else if(!IsOnFloor()){
+			animatedSprite.Play("MC_Jump");	// jump
+		}
 		
 		
 		direction = MoveAndSlide(direction, Vector2.Up);
